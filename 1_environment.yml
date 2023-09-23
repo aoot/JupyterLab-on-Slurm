@@ -1,0 +1,16 @@
+# JupyterLab on srun Conda environment setup
+
+name: JupyterLab_on_slurm
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - nodejs
+  - python[version='<3.11']
+  - nb_conda_kernels  # Needed for kernels from other conda env to show up in Jupyter
+  ## Additional packages you want (comment out ones you don't need):
+  - conda-forge::nest-simulator  # This can take a while
+  - numpy
+  - matplotlib
+  - seaborn
+  - scipy
